@@ -42,7 +42,8 @@ Also, the input uses "#" at the beginning of a line as a comment character, and 
 
 The sections of the input are expected to be in the order above.
 
-See sampleInput.txt for an example.
+See sampleInput.txt for a simple example.
+See ExampleData1.csv for a more extensive example.
 
 #Output format
 The output for each command is shown below. In each case, the first line is a timestamp indicating when the output was produced, followed by the command and its parameters, followed by the required output.
