@@ -49,11 +49,18 @@ The output for each command is shown below. In each case, the first line is a ti
 Below is an example of how your program is expected to be used.
 
 prompt> java -jar se251_a02_upi001.jar tiny_new.csv "LISTCONTENTWITHTAG:William Michael Albert Broad:sushi"
+
 Tue Apr 08 10:57:46 NZST 2014
+
 LISTCONTENTWITHTAG:William Michael Albert Broad:sushi
+
 Great Sushi(William Michael Albert Broad, Friends, sushi)
+
 Lunch@Freds(William Michael Albert Broad, Public, sushi)
+
 St Pierre's on Symonds(Farrokh Bulsara, Friends, auckland,sushi)
+
+
 The file se251_a02_upi001.jar is the executable jar file. The first parameter (tiny_new.csv) is the name of the input file. The second parameter is the command to execute on that input file. The second parameter is in double quotes (") because it contains spaces in it. Once that value reaches your program it will have lost the quotes but retained any spaces.
 The content "Lunch@Freds" is included in the output because it has "sushi" as one of the tags and it has Public visibility.
 
