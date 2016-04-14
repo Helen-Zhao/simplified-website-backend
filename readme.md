@@ -31,29 +31,18 @@ command_line_prompt> java -jar <runnablejarfile> <datafile> <command>
 #Input Format
 The input consists of 4 sections in the following order:
 Members. This section lists all the members. Information for each member is on one line. The line consists of three fields. The first field is the string MEMBER, the second is the member's name, and the third is the member's nickname. No two members can have the same name (that is, names must be unique), but they can have the same nickname. The fields are separated by a single tab character.
+
 Friends. This lists all the friends of a member. Each line consists of the 3 fields; the string FRIEND, the name of the member, and the name of the friend, again tab separated. If a member has multiple friends, then there will be multiple lines for that member.
+
 Content. This lists all the content. Each line consists of 5 fields. The first field indicates the type of the content, either TEXT or MUSIC. The next field is the name of the owner. Field 3 is the name of the content, which must be unique. Field 4 is the visibility of the content, one of Public, Friends, or Private. Field 5 is a comma-separated list of tags.
+
 Folders. This section lists what folders the content belongs to (if any). The format is there are 4 fields: the string FOLDER, the name of the owner of the folder, the name of the folder, which must be unique, and the name of the content in the folder. When there are multiple content items in an folder, there will be multiple lines, one for each item.
+
 Also, the input uses "#" at the beginning of a line as a comment character, and such lines are to be ignored. Also, lines that are empty or blank should also be just ignored.
+
 The sections of the input are expected to be in the order above.
 
-A small example is given below. The commented lines are not necessary for valid input, but are provided to assist interpreting data files.
-
-/#Members: MEMBER, name, nickname (tab separated)
-MEMBER	William Michael Albert Broad	Billy Idol
-MEMBER	Farrokh Bulsara	Freddie Mercury
-/#Friends: FRIEND, name, friend (tab separated, multiple lines for multiple
-/#friends)
-FRIEND	Farrokh Bulsara	William Michael Albert Broad
-/#Content: content type, owner name, title, visibility, comma-separated tags (tab separated)
-/#content type: TEXT or MUSIC
-TEXT	Farrokh Bulsara	Cat in Hat	Public	cat,hat
-TEXT	Farrokh Bulsara	St Pierre's on Symonds	Friends	sushi,auckland
-TEXT	William Michael Albert Broad	Lunch@Freds	Public	sushi
-MUSIC	William Michael Albert Broad	Great Sushi	Friends	sushi
-/#Folders: FOLDER, owner, folder name, content title (tab separated)
-FOLDER	William Michael Albert Broad	Food	Lunch@Freds
-FOLDER	William Michael Albert Broad	Food	Great Sushi
+See sampleInput.txt for an example.
 
 #Output format
 The output for each command is shown below. In each case, the first line is a timestamp indicating when the output was produced, followed by the command and its parameters, followed by the required output.
