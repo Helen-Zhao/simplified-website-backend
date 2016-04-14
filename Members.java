@@ -1,4 +1,4 @@
-package assignment2;
+
 
 import java.text.Collator;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package assignment2;
+
 
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -8,7 +8,7 @@ class ListUnowned {
 		LinkedList<Content> publicv = new LinkedList<Content>(); //make linked lists for found unowned content
 		LinkedList<Content> privatev = new LinkedList<Content>();
 		LinkedList<Content> friendsv = new LinkedList<Content>();
-		if (Stores.ContentMap.get("") != null){	 //if ther actually is unowned content
+		if (Stores.ContentMap.get("") != null){	 //if there actually is unowned content
 			LinkedList<Content> all = Stores.ContentMap.get(""); //get it
 			ListIterator<Content> itr = all.listIterator();
 			while (itr.hasNext()){

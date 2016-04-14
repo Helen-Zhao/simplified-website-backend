@@ -1,4 +1,4 @@
-package assignment2;
+
 
 class GetCommand {
 	String command;

@@ -1,4 +1,4 @@
-package assignment2;
+
 
 import java.util.LinkedList;
 import java.util.ListIterator;
