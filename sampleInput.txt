@@ -1,0 +1,15 @@
+#Members: MEMBER, name, nickname (tab separated)
+MEMBER	William Michael Albert Broad	Billy Idol
+MEMBER	Farrokh Bulsara	Freddie Mercury
+#Friends: FRIEND, name, friend (tab separated, multiple lines for multiple
+#friends)
+FRIEND	Farrokh Bulsara	William Michael Albert Broad
+#Content: content type, owner name, title, visibility, comma-separated tags (tab separated)
+#content type: TEXT or MUSIC
+TEXT	Farrokh Bulsara	Cat in Hat	Public	cat,hat
+TEXT	Farrokh Bulsara	St Pierre's on Symonds	Friends	sushi,auckland
+TEXT	William Michael Albert Broad	Lunch@Freds	Public	sushi
+MUSIC	William Michael Albert Broad	Great Sushi	Friends	sushi
+#Folders: FOLDER, owner, folder name, content title (tab separated)
+FOLDER	William Michael Albert Broad	Food	Lunch@Freds
+FOLDER	William Michael Albert Broad	Food	Great Sushi
